@@ -4,6 +4,9 @@
 #data
 data/
 
+#image
+*.jpg
+
 #notebooks (remove later)
 *.ipynb
 

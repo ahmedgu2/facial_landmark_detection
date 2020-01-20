@@ -5,7 +5,7 @@
 data/
 
 #image
-*.jpg
+#*.jpg
 
 #notebooks (remove later)
 *.ipynb

@@ -84,5 +84,5 @@ def predict(img_url):
 
 
 #if __name__ == "__main__":
-predict('obamas.jpg')
+predict('images/obamas.jpg')
 # %%

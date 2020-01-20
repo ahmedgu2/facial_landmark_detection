@@ -6,6 +6,7 @@ from config import Config
 import torch.optim as optim
 import torch.nn as nn
 from model.naimishnet import NaimishNet
+from model.resnet import Resnet
 import torch
 
 def train():
@@ -31,7 +32,7 @@ def train():
                           shuffle=True)
     
     #define model
-    net = NaimishNet()
+    net = Resnet()
     net = net.cuda()
 
     #loss function

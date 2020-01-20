@@ -9,5 +9,5 @@ class Config(object):
         self.MODEL_DIR = "runs/"
         self.device = "cuda"
         self.learning_rate = 0.001
-        self.batch_size = 32
-        self.epochs = 15
+        self.batch_size = 16
+        self.epochs = 30

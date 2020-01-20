@@ -4,6 +4,7 @@ from torchvision import transforms, utils
 from datasets.data_transforms import Rescale, Normalize, ToTensor
 from config import Config
 from model.naimishnet import NaimishNet
+from model.resnet import Resnet
 import torch
 import cv2
 import matplotlib.pyplot as plt
@@ -26,8 +27,8 @@ def predict(img_url):
     faces = face_cascade.detectMultiScale(image, 2, 6)
 
     #load pretrained model
-    model = NaimishNet()
-    model.load_state_dict(torch.load("runs/model-9-0.0509.model"))
+    model = Resnet()
+    model.load_state_dict(torch.load("runs/model-28-0.0046.model"))
 
     #switch to evaluation mode
     model.eval()
@@ -83,5 +84,5 @@ def predict(img_url):
 
 
 #if __name__ == "__main__":
-predict('mona_lisa.jpg')
+predict('obamas.jpg')
 # %%

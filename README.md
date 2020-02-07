@@ -8,7 +8,7 @@ Facial keypoints include points around the eyes, nose, and mouth on a face and a
 
 The code presented here should be able to look at any image, detect faces, and predict the locations of facial keypoints on each face. 
 
-An example for the whole process is demonstrated below :
+The process of landmark detection is split into two steps as shown below: 
 
 1. An Image is fed to the first model (Haar cascade classifier) to detect the faces.
 
